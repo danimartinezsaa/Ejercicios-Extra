@@ -35,7 +35,7 @@ public class EjercicioDeducciones {
         int nsueldo=Integer.parseInt(sueldo);
         empleado1.setSueldo(nsueldo);
         
-        JOptionPane.showMessageDialog(null,"GRAFICICACIÓN EXTRA\n"
+        JOptionPane.showMessageDialog(null,"GRATIFICACIÓN EXTRA\n"
                 + "Nombre: "+empleado1.getNombre()+
                 "\nNúmero hijos: "+empleado1.getHijos()+
                 "\nHoras ausentismo: "+empleado1.getHoras()+
