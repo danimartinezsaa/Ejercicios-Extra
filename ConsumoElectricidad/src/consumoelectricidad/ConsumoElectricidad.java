@@ -19,7 +19,7 @@ public class ConsumoElectricidad {
     public static void main(String[] args) {
         Datos p1=new Datos();
         String codigo=null;
-        while(1==1){
+        while(true){
             p1.setCodigo(JOptionPane.showInputDialog("Introduzca código del cliente:"));
             codigo=p1.getCodigo();
             if(codigo.equals("*"))
