@@ -19,10 +19,16 @@ public class EjercicioDeducciones {
     public static void main(String[] args) {
         Empleados empleado1=new Empleados();
         Cuentas cuenta=new Cuentas();
+        String nombre="";
+        int var=0;
         
-        String nombre=JOptionPane.showInputDialog("Ingrese el nombre del empleado:");
+        while(var==0){
+        nombre=JOptionPane.showInputDialog("Ingrese el nombre del empleado:");
         empleado1.setNombre(nombre);
         
+        if(nombre.equals("*"))
+            break;
+
         String hijos=JOptionPane.showInputDialog("Ingrese número de hijos:");
         int nhijos=Integer.parseInt(hijos);
         empleado1.setHijos(nhijos);
@@ -42,6 +48,7 @@ public class EjercicioDeducciones {
                 "\nSueldo Fijo: "+empleado1.getSueldo()+
                 "\nDeducciones: "+cuenta.deducciones(empleado1.getHoras())+
                 "\nGratificación total: "+(cuenta.chijos(empleado1.getHijos(), empleado1.getSueldo())+cuenta.deducciones(empleado1.getHoras())));
-    }
     
+        }
+    }
 }
