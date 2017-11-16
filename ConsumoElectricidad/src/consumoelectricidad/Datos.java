@@ -58,7 +58,7 @@ public class Datos {
     }
     
     public float total(){
-        float total,importep,ivaimporte;
+        float total,importep;
         total=(lectura_1+lectura_2)*13.11f;
         
         if(potencia<3.3f)
